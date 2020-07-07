@@ -15,7 +15,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return Auth::orders;
+        return Auth::orders()->paginate(10);
     }
 
     /**
